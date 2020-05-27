@@ -12,6 +12,9 @@ while 0 < lives: # true until it reach 5 count
             if userinput == r : # check if true userinput is equal to the random number it print the the code below
                 print('Congratulation !!! You guess The correct number..')
                 break # break the loop
+            elif userinput > 10:
+                print('Out Of Range ,, Please Try Again')
+                lives+=1
             else:# once if statement become false it print the code below
                 print('Please Try Again..')
     except ValueError:# handle the valueerror
